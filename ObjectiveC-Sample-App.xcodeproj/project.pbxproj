@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153E55D3BB2EF41F46587A8F /* libPods-ObjectiveC-Sample-App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C39A3118406A237665026642 /* libPods-ObjectiveC-Sample-App.a */; };
 		B6B4AFF129364D0E00291FE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B4AFF029364D0E00291FE6 /* AppDelegate.m */; };
 		B6B4AFF429364D0E00291FE6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B4AFF329364D0E00291FE6 /* SceneDelegate.m */; };
 		B6B4AFF729364D0E00291FE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B4AFF629364D0E00291FE6 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24AEC5F4C56927C2171B862F /* Pods-ObjectiveC-Sample-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC-Sample-App.debug.xcconfig"; path = "Target Support Files/Pods-ObjectiveC-Sample-App/Pods-ObjectiveC-Sample-App.debug.xcconfig"; sourceTree = "<group>"; };
+		A69E585ADBBD24596B56F2C7 /* Pods-ObjectiveC-Sample-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveC-Sample-App.release.xcconfig"; path = "Target Support Files/Pods-ObjectiveC-Sample-App/Pods-ObjectiveC-Sample-App.release.xcconfig"; sourceTree = "<group>"; };
 		B6B4AFEC29364D0E00291FE6 /* ObjectiveC-Sample-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjectiveC-Sample-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B4AFEF29364D0E00291FE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6B4AFF029364D0E00291FE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		B6B4AFFE29364D0F00291FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6B4B00029364D0F00291FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B4B00129364D0F00291FE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C39A3118406A237665026642 /* libPods-ObjectiveC-Sample-App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveC-Sample-App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153E55D3BB2EF41F46587A8F /* libPods-ObjectiveC-Sample-App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E56D48DC20D59FB9377CFE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C39A3118406A237665026642 /* libPods-ObjectiveC-Sample-App.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6B4AFE329364D0E00291FE6 = {
 			isa = PBXGroup;
 			children = (
 				B6B4AFEE29364D0E00291FE6 /* ObjectiveC-Sample-App */,
 				B6B4AFED29364D0E00291FE6 /* Products */,
+				CEE63FD8501581B5FDA47138 /* Pods */,
+				6E56D48DC20D59FB9377CFE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,16 @@
 			path = "ObjectiveC-Sample-App";
 			sourceTree = "<group>";
 		};
+		CEE63FD8501581B5FDA47138 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24AEC5F4C56927C2171B862F /* Pods-ObjectiveC-Sample-App.debug.xcconfig */,
+				A69E585ADBBD24596B56F2C7 /* Pods-ObjectiveC-Sample-App.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6B4B00529364D0F00291FE6 /* Build configuration list for PBXNativeTarget "ObjectiveC-Sample-App" */;
 			buildPhases = (
+				787F6BE11C9466106DD17397 /* [CP] Check Pods Manifest.lock */,
 				B6B4AFE829364D0E00291FE6 /* Sources */,
 				B6B4AFE929364D0E00291FE6 /* Frameworks */,
 				B6B4AFEA29364D0E00291FE6 /* Resources */,
@@ -140,6 +166,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		787F6BE11C9466106DD17397 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjectiveC-Sample-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6B4AFE829364D0E00291FE6 /* Sources */ = {
@@ -287,6 +338,7 @@
 		};
 		B6B4B00629364D0F00291FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24AEC5F4C56927C2171B862F /* Pods-ObjectiveC-Sample-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +365,7 @@
 		};
 		B6B4B00729364D0F00291FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A69E585ADBBD24596B56F2C7 /* Pods-ObjectiveC-Sample-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
